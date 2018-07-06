@@ -1,0 +1,7 @@
+version: '3'
+services:
+  restify-test:
+    build: .
+    ports:
+      - 9090:8080
+    command: npx nodemon dist/server.js
